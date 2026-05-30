@@ -8,31 +8,31 @@ const TaskTimeline = () => {
       id: 1,
       name: 'Design Phase',
       start: 0,
-      duration: 15,
-      status: 'complete',
-      team: 'Design Team'
+      duration: 0,
+      status: 'pending',
+      team: 'Designer'
     },
     {
       id: 2,
       name: 'Development Phase',
-      start: 10,
-      duration: 25,
+      start: 0,
+      duration: 5,
       status: 'in_progress',
-      team: 'Dev Team'
+      team: 'Developer'
     },
     {
       id: 3,
       name: 'Testing Phase',
-      start: 30,
-      duration: 12,
+      start: 0,
+      duration: 0,
       status: 'pending',
       team: 'QA Team'
     },
     {
       id: 4,
       name: 'Deployment',
-      start: 42,
-      duration: 5,
+      start: 0,
+      duration: 0,
       status: 'pending',
       team: 'DevOps Team'
     }
