@@ -1,0 +1,74 @@
+.app {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.light-mode {
+  background-color: #f5f7fa;
+  color: #1a1a1a;
+}
+
+.app.dark-mode {
+  background-color: #1a1a1a;
+  color: #f5f7fa;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toggle-btn {
+  background: var(--card-bg);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.app.light-mode .toggle-btn {
+  background: #ffffff;
+  color: #fbbf24;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark-mode .toggle-btn {
+  background: #2d2d2d;
+  color: #fbbf24;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+:root {
+  --primary-color: #3b82f6;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --info-color: #06b6d4;
+}
+
+.app.light-mode {
+  --card-bg: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --border-color: #e5e7eb;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark-mode {
+  --card-bg: #2d2d2d;
+  --text-primary: #f5f7fa;
+  --text-secondary: #b0b0b0;
+  --border-color: #444444;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}

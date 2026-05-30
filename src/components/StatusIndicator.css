@@ -1,0 +1,101 @@
+.status-indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.status-header {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.status-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.status-display {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 3px solid;
+  background: var(--card-bg);
+}
+
+.status-icon {
+  flex-shrink: 0;
+}
+
+.status-info {
+  flex: 1;
+}
+
+.status-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.status-description {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.completion-tracker {
+  padding: 12px 0;
+}
+
+.completion-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.completion-percentage {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.upcoming-actions h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.actions-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.actions-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.action-bullet {
+  color: var(--primary-color);
+  font-weight: bold;
+}

@@ -1,0 +1,134 @@
+.risk-issue-log {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.issues-container {
+  overflow-x: auto;
+}
+
+.issues-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 800px;
+}
+
+.issue-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.issue-row:hover {
+  background: var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.issue-type {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--border-color);
+}
+
+.issue-main {
+  flex: 1;
+  min-width: 250px;
+}
+
+.issue-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.issue-description {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.issue-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  min-width: 400px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+.severity-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.status-badge-log {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.owner-name {
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.due-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .issue-meta {
+    grid-template-columns: repeat(2, 1fr);
+    min-width: auto;
+  }
+
+  .issue-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .issues-table {
+    min-width: auto;
+  }
+
+  .issue-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .issue-meta {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
