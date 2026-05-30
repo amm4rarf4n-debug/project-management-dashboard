@@ -7,7 +7,7 @@ const KPIMetrics = () => {
     {
       id: 1,
       label: 'Project Completion',
-      value: '65%',
+      value: '2%',
       target: '100%',
       trend: 'up',
       icon: CheckCircle,
@@ -16,27 +16,27 @@ const KPIMetrics = () => {
     {
       id: 2,
       label: 'SLA Compliance',
-      value: '98.5%',
+      value: '0%',
       target: '95%',
-      trend: 'up',
+      trend: 'down',
       icon: Target,
       color: '#10b981'
     },
     {
       id: 3,
-      label: 'Customer Satisfaction',
-      value: '4.7/5',
+      label: 'Supervisor Satisfaction',
+      value: '1/5',
       target: '4.5/5',
-      trend: 'up',
+      trend: 'down',
       icon: Users,
       color: '#f59e0b'
     },
     {
       id: 4,
       label: 'Team Utilization',
-      value: '87%',
+      value: '15%',
       target: '90%',
-      trend: 'down',
+      trend: 'up',
       icon: TrendingUp,
       color: '#06b6d4'
     }
