@@ -30,9 +30,9 @@ const BudgetVsActuals = () => {
     },
     {
       month: 'September  ',
-      planned: 00000,
-      actual: 00000,
-      variance: 0000
+      planned: 10000,
+      actual: 12000,
+      variance: 2000
     }
   ]);
 
