@@ -5,34 +5,34 @@ import './BudgetVsActuals.css';
 const BudgetVsActuals = () => {
   const [budgetData] = useState([
     {
-      month: 'January',
+      month: 'May',
       planned: 50000,
       actual: 48000,
       variance: 2000
     },
     {
-      month: 'February',
+      month: 'June',
       planned: 55000,
       actual: 58000,
       variance: -3000
     },
     {
-      month: 'March',
+      month: 'July',
       planned: 60000,
       actual: 59500,
       variance: 500
     },
     {
-      month: 'April',
+      month: 'August',
       planned: 65000,
       actual: 68000,
       variance: -3000
     },
     {
-      month: 'May',
-      planned: 70000,
-      actual: 71200,
-      variance: -1200
+      month: 'September  ',
+      planned: 00000,
+      actual: 00000,
+      variance: 0000
     }
   ]);
 
@@ -46,9 +46,9 @@ const BudgetVsActuals = () => {
       return (
         <div className="custom-tooltip">
           <p className="label">{payload[0].payload.month}</p>
-          <p className="planned">Planned: ${payload[0].value.toLocaleString()}</p>
-          <p className="actual">Actual: ${payload[1].value.toLocaleString()}</p>
-          <p className="variance">Variance: ${payload[0].payload.variance.toLocaleString()}</p>
+          <p className="planned">Planned: RM{payload[0].value.toLocaleString()}</p>
+          <p className="actual">Actual: RM{payload[1].value.toLocaleString()}</p>
+          <p className="variance">Variance: RM{payload[0].payload.variance.toLocaleString()}</p>
         </div>
       );
     }
@@ -65,15 +65,15 @@ const BudgetVsActuals = () => {
       <div className="budget-summary">
         <div className="budget-card">
           <h4>Total Planned</h4>
-          <p className="budget-amount">${totalPlanned.toLocaleString()}</p>
+          <p className="budget-amount">RM{totalPlanned.toLocaleString()}</p>
         </div>
         <div className="budget-card">
           <h4>Total Actual</h4>
-          <p className="budget-amount">${totalActual.toLocaleString()}</p>
+          <p className="budget-amount">RM{totalActual.toLocaleString()}</p>
         </div>
         <div className={`budget-card variance-card ${totalVariance >= 0 ? 'positive' : 'negative'}`}>
           <h4>Total Variance</h4>
-          <p className="budget-amount">${totalVariance.toLocaleString()}</p>
+          <p className="budget-amount">RM{totalVariance.toLocaleString()}</p>
           <p className="variance-percentage">({totalVariance >= 0 ? '+' : ''}{variancePercentage}%)</p>
         </div>
       </div>

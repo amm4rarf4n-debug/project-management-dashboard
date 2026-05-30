@@ -8,12 +8,12 @@ import RiskIssueLog from './RiskIssueLog';
 
 const Dashboard = () => {
   const [projectData] = useState({
-    status: 'amber',
-    completion: 65,
+    status: 'red',
+    completion: 10,
     upcomingActions: [
-      'Review Phase 2 deliverables',
-      'Schedule stakeholder meeting',
-      'Finalize budget allocation'
+      'Review Phase 1 deliverables',
+      'Schedule team meeting',
+      'Finalize proposal and development tools '
     ]
   });
 
